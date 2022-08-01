@@ -1,8 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    
+    background: linear-gradient(90deg, rgb(0, 255, 149) 1%, rgb(229, 255, 0) 99%);
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font: normal 40pt Arial;
+}
+#area {
+    background-color: aquamarine;
+    width: 50vh;
+    height: 30vw;
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 15px;
+    opacity: 0.8;
+    cursor: pointer;
 }
