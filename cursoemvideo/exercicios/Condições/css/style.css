@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(72deg,  rgb(0, 255, 149) 1%, rgb(229, 255, 0) 99%);
+    font-size: 20px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.multa, .pais {
+    background-color: aquamarine;
+    width: 60vh;
+    height: auto;
+    padding: 25px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
