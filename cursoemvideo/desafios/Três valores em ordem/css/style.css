@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(82deg, rgb(19, 206, 134)1%, rgb(150, 28, 180) 99%);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.conteudo {
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(80deg, rgb(0, 60, 255) 1%, rgb(236, 152, 55) 99%);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 50px 0 50px 0;
+    padding: 20px;
+    text-shadow: 2px 1px black;
+    color: rgb(0, 255, 221);
+}
+
+h3 {
+    padding-bottom: 20px;
+    color: chartreuse;
+    text-shadow: 2px 1px black;
+}
+
+input {
+    width: 80px;
+    color: chartreuse;
+    text-align: center;
+    background-color: rgba(0, 247, 255, 0.068);
+}

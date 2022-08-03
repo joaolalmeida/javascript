@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(72deg, blue 1%, red 99%);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    font-size: 25px;
+    width: 50%;
+    height: 50%;
+    padding: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    color: rgb(94, 94, 37);
+}
+
+input {
+    font-size: 20px;
+    width: 80px;
+    cursor: pointer;
+}
