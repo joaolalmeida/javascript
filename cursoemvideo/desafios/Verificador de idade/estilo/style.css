@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+h1{
+
+}
+.container {
+    height: 100vh;
+    width: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.conteudo {
+    width: 500px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: black;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section class="container">
+        <div class="conteudo">
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0"> <!--Valor minimo que pode ser digitado-->
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked> <!--checked obriga a marcar o campo, apenas um pode ser checked-->
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar">
+            </p>
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
+            </div>
+        </div>
+       
+    </section>
+    <footer>
+        <p> <a href="https://github.com/joaolalmeida">GitHub João Almeida</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
