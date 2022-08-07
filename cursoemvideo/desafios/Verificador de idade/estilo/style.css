@@ -8,24 +8,38 @@ body {
     overflow: hidden;
 }
 h1{
-
+    text-align: center;
+    color: aquamarine;
+    text-shadow: 1px 1px rgba(127, 255, 212, 0.637);
+}
+.header {
+    text-align: center;
+    
 }
 .container {
     height: 100vh;
     width: auto;
-    background-color: aqua;
+    background-color: #1A1B1F;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 40px;
+    color: white;
+    font-size: 1.3em;
 }
 
 .conteudo {
-    width: 500px;
-    background-color: white;
+    width: 600px;
+    height: auto;
+    background-color: #01161F;
     border-radius: 25px;
+    padding: 20px;
 }
-
-footer {
-    background-color: black;
+.footer a {
+    color: aquamarine;
+    text-decoration: none;
+}
+.footer a:hover {
+    background-color: ;
 }
