@@ -24,7 +24,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 40px;
+    line-height: 45px;
     color: white;
     font-size: 1.3em;
 }
@@ -39,7 +39,25 @@ h1{
 .footer a {
     color: aquamarine;
     text-decoration: none;
+    transition: 0.5s;
+    font-size: 0.8em;
 }
 .footer a:hover {
-    background-color: ;
+    color: white;
+}
+
+#txtano {
+    background-color: black;
+    border-color: aquamarine;
+    color: white;
+    border-radius: 2px;
+}
+
+#txtverificar {
+    background-color: #01161F;
+    color: aquamarine;
+    border-color: aquamarine;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10%;
 }
