@@ -10,7 +10,7 @@ function verificar() {
         var idade = ano - Number(fano.value)
         var gênero = ''
         var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
+        img.setAttribute('id', 'foto') /* id="foto" é a mesma coisa */
         if (fsex[0].checked) {
             gênero = 'Homem'
             if (idade >=0 && idade < 10) {
