@@ -9,8 +9,9 @@
 </head>
 <body>
     <section class="container">
+        <h1>Verificador de Idade</h1>
         <div class="conteudo">
-            <h1>Verificador de Idade</h1>
+            
             <p>Ano de Nascimento:
                 <input type="number" name="txtano" id="txtano" min="0"> <!--Valor minimo que pode ser digitado-->
             </p>
@@ -21,7 +22,7 @@
                 <label for="fem">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" id="txtverificar">
+                <input type="button" value="Verificar" onclick="verificar()" id="txtverificar">
             </p>
             <div id="res">
                 Preencha os dados acima para ver o resultado!
