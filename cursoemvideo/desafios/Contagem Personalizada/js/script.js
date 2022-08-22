@@ -1,14 +1,33 @@
-function verificar() {
-    txtn1 = document.querySelector('input#txtnum1')
-    txtn2 = document.querySelector('input#txtnum2')
-    txtn3 = document.querySelector('input#txtnum3')
-    res = document.querySelector('div#res')
-    var n1 = Number(txtnum1.value)
-    var n2 = Number(txtnum2.value)
-    var n3 = Number(txtnum3.value)
-    var c = n1
-    while (c <= n2) {
-        res.innerHTML += ` ${c}  `
-    c += n3    
+function contar() {
+    let ini = document.getElementById('txti')  
+    let fim = document.getElementById('txtf')  
+    let passo = document.getElementById('txtp')  
+    let res = document.getElementById('res')
+
+    if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        //window.alert('[ERRO] Faltam dados!')
+        res.innerHTML = 'Impossível contar!'
+    } else {
+        res.innerHTML = 'Contando: <br>'
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+        // Corrigindo erro do navegador travar com o PASSO recebendo 0
+        if (p <= 0) {
+            window.alert('Passo inválido! Considerando PASSO 1')
+            p = 1
+        }
+        if (i < f) {
+            //Contagem crescente
+            for(let c = i; c <= f; c += p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
+        } else {
+            // Contagem regressiva
+            for(let c = i; c >= f; c -= p) {
+                res.innerHTML += `${c} \u{1F449}`
+            }
+        }
+        res.innerHTML += `\u{1F3C1}`
     }
 }
