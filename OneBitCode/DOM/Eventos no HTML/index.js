@@ -18,6 +18,4 @@ function clickEvent() {
     alert("clicked")
 }
 
-//!! 
-// teste 02
-//!! teste01
+
