@@ -15,7 +15,7 @@ function blurEvent() {
 }
 
 function clickEvent() {
-    alert("clicked")
+    alert("Clicou")
 }
 
 
