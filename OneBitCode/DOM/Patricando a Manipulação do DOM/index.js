@@ -31,7 +31,7 @@ function addContact() {
   adressInput.name = 'adress'
   adressInput.id = 'adress'
   adressLi.appendChild(adressInput)
-  ul.
+  ul.appendChild(adressLi)
 
   contactSection.append(h3, ul)
 }
