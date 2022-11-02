@@ -13,7 +13,7 @@ function addInput() {
   newInput.style.width = "300px" // largura do input
   newInput.style.margin = "10px" // margin entre os inputs
   newInput.style.background = "lightgreen" // cor do input
-  
+
 
   newLi.appendChild(newInput) //newLi é o elemento pai recebendo o newInput
   ul.appendChild(newLi)  // ul é o elemento pai 
