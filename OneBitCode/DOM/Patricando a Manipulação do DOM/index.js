@@ -5,6 +5,7 @@ function addContact() {
   h3.innerText = 'Contato'
 
   const ul = document.createElement('ul')
+  ul.style.color = "blue"
 
   const nameLi = document.createElement('li')
   nameLi.innerText = 'Nome: '
@@ -13,7 +14,7 @@ function addContact() {
   nameInput.name = 'fullname'
   nameLi.appendChild(nameInput)
   ul.appendChild(nameLi)
-
+  ul.appendChild(document.createElement('br')) //Pular uma linha
 
   const phoneLi = document.createElement('li')
   phoneLi.innerText = "Telefone: "
@@ -22,16 +23,27 @@ function addContact() {
   phoneInput.name = 'phone'
   phoneLi.appendChild(phoneInput)
   ul.appendChild(phoneLi)
+  ul.appendChild(document.createElement("br"))
 
+  const addressLi = document.createElement('li')
+  addressLi.innerHTML = '<label for="address">Endereço: </label>' //label permite selecionar o input clicando na palavra fora dele
+  const addressInput = document.createElement('input')
+  addressInput.type = 'text'
+  addressInput.name = 'address'
+  addressInput.id = 'address'
+  addressLi.appendChild(addressInput)
+  ul.appendChild(addressLi)
+  ul.appendChild(document.createElement("br"))
 
-  const adressLi = document.createElement('li')
-  adressLi.innerHTML = '<label for="adress">Endereço: </label>'
-  const adressInput = document.createElement('input')
-  adressInput.type = 'text'
-  adressInput.name = 'adress'
-  adressInput.id = 'adress'
-  adressLi.appendChild(adressInput)
-  ul.appendChild(adressLi)
+  contactSection.append(h3, ul) // igual o apprendChild mas usado para incluir varios elementos dentro
+}
 
-  contactSection.append(h3, ul)
+function removeContact() {
+  const contactSection = document.querySelector('#contacts-list')
+
+  const titles = document.getElementsByTagName('h3')
+  const contacts = document.getElementsByTagName('ul')
+
+  contactSection.removeChild(titles[titles.length - 1]) //remover um nó(elemento)
+  contactSection.removeChild(contacts[contacts.length -1]) // pegando o ultimo contato para remover
 }
