@@ -4,6 +4,8 @@ function addInput() {
   const newLi = document.createElement('li') // Tag a ser criada
   newLi.className = 'list-item'  // nome da classe do li criado
   newLi.innerText = 'Novo input: '  // Nome do texto que sera escrito no li
+  newLi.style.color = 'red'
+  newLi.style.fontSize = "20px"
 
   const newInput = document.createElement('input')
   newInput.type = 'text'  // Type e name os tipos do input
