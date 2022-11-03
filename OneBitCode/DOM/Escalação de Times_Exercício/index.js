@@ -9,7 +9,24 @@ function addPlayer() {
     const teamList = document.getElementById('teamList')
     const playerItem = document.createElement('li')
     playerItem.id = 'player-' + number
-    playerItem.innerText = position + ": " + name + "(" + number + ")"
+    playerItem.innerText = position + ": " + name + " (" + number + ")"
     teamList.appendChild(playerItem)
+
+    //Para zerar os campos após a inclusão dos dados
+    document.getElementById('position').value = '' 
+    document.getElementById('name').value = ''
+    document.getElementById('number').value = ''
+  }
+}
+
+function removePlayer() {
+  const number = document.getElementById('numberToRemove').value
+  const playerToRemove = document.getElementById('player-' + number) //selecionar o id do (if confimation)
+
+  const confirmation = confirm('Remover o jogador ' + playerToRemove.innerText + '?')
+
+  if (confirmation) {
+    document.getElementById("teamList").removeChild(playerToRemove)
+    document.getElementById("numberToRemove").value = ""
   }
 }
