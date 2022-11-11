@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+.container {
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.container2 label {
+  background-color: rgb(203, 23, 23);
+  margin: 15px;
+}
