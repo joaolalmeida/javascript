@@ -5,12 +5,12 @@
 }
 
 body {
-
+  background-color: rgb(55, 67, 80);
+  color: white;
 }
 
 .container {
   height: 100vh;
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,10 +20,28 @@ body {
 .container2 {
   border: 2px solid black;
   border-radius: 15px;
-  padding: 15px;
+  display: contents;
+  background-color: transparent;
 }
 
 .container2 label {
-  background-color: rgb(203, 23, 23);
-  margin: 15px;
+
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 2px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+}
+
+.input:hover {
+  background-color: azure;
+  color: black;
+}
+
+#password {
+
 }
