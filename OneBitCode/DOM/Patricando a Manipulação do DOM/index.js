@@ -5,7 +5,8 @@ function addContact() {
   h3.innerText = 'Contato'
 
   const ul = document.createElement('ul')
-  ul.style.color = "blue"
+  ul.style.listStyle = "none"
+  ul.style.borderBottom = "2px solid white"
 
   const nameLi = document.createElement('li')
   nameLi.innerText = 'Nome: '
