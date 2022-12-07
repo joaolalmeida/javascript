@@ -11,6 +11,7 @@ function addContact() {
   const nameLi = document.createElement('li')
   nameLi.innerText = 'Nome: '
   const nameInput = document.createElement('input')
+  nameInput.style.marginLeft = '16px'
   nameInput.type = 'text'
   nameInput.name = 'fullname'
   nameLi.appendChild(nameInput)
