@@ -12,6 +12,11 @@ document.querySelectorAll('.charKey').forEach(function (charkeyBtn) {
   })
 })
 
+document.getElementById('clear').addEventListener('click', function () {
+  input.value = ''
+  input.focus()
+})
+
 input.addEventListener('keydown', function (ev) {  // O evento é disparado quando uma tecla é pressionada
   ev.preventDefault()
   if (allowedKeys.includes(ev.key)) {
