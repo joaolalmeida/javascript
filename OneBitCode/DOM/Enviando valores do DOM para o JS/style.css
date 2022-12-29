@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section {
+  padding: 15px;
+}
+
+#password {
+  margin-left: 85px;
+}
+
+input {
+  margin: 6px;
+}
