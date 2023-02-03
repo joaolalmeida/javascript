@@ -82,7 +82,6 @@ h2 {
   display: grid;
   grid-template-columns: 6rem 6rem 6rem;
   grid-template-rows: 6rem 6rem 6rem;
-
   margin-bottom: 1.5rem;
   max-width: 18.2rem;
 }
