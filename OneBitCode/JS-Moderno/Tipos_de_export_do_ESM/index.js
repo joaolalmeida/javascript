@@ -8,3 +8,8 @@ defaultInline()
 
 group()
 exportDefault()
+
+document.querySelector
+document.getElementsByTagName
+document.getElementsByName
+document.getElementById
